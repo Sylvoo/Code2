@@ -6,11 +6,11 @@ int main()
 
     for (int i = 0; i<64; i++)
     {
-        if (i%8)
+        if (i%8) // fajen tabelka 
         {
             cout<<"\t"; //tabulator
         }
-        else{cout<<"\n";}
+        else{cout<<"\n";} // znak nowa linia 
         cout<<i;
     }
 
