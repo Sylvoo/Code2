@@ -13,6 +13,6 @@ int main()
     switch(nr)
     {
         case 0:
-            show(file);
+            Show("content.txt");
     }
 }

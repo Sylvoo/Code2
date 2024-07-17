@@ -17,19 +17,13 @@ int menu()
     return num;
 }
 
-void Err(file)
+void Show(string filename) 
 {
-    if(!file.is_open)
+    ifstream file(filename);
+    if(!file.is_open())
         {
             cerr<<"Error, nie otwarto pliku"<<endl;
-            return 1;
         }
-}
-
-void Show() 
-{
-    ifstream file("content.txt");
-    Err(file);
     string line;
     while (getline(file, line))
     {
