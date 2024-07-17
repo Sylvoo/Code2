@@ -17,7 +17,7 @@ int main()
     return 0;
 }
 
-void zer(int wart, int &ref)
+void zer(int wart, int &ref) // dzialamy nie na kopii ale na oryginale !
 {
     cout<<"\tWartosc funkcji \"zer\" przed zerowaniem:\n";
     cout<<"\twart = "<<wart<<", ref = "<<ref<<endl;
