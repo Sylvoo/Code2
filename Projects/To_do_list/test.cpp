@@ -13,7 +13,7 @@ int main()
     while(getline(inputFile, line))
     {
         num_line ++;
-        cout<<num_line<<". "<<line;
+        cout<<num_line<<". "<<line<<endl;
     }
     inputFile.close();
     return 0;
