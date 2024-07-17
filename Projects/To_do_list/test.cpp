@@ -1,20 +1,23 @@
 #include<iostream>
+#include"dir.hpp"
 #include<fstream>
-#include<string>
+#include<ios>
 
 using namespace std;
+int nr;
 
 int main()
 {
-    ifstream inputFile("content.txt", ios::in);
-    int num_line = 0;
-    string line;
-    cout<<"File content: "<<endl;
-    while(getline(inputFile, line))
+    fstream plik;
+    nr = menu();
+    switch(nr)
     {
-        num_line ++;
-        cout<<num_line<<". "<<line;
+        case 0:
+            show();
+        case 1:
+        ifstream file("content.txt")
+        Err()
+        
+        
     }
-    inputFile.close();
-    return 0;
 }

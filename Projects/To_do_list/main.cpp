@@ -12,13 +12,7 @@ int main()
     nr = menu();
     switch(nr)
     {
-        case 1:
-           // plik.open();
-        case 2:
-        case 3:
-        case 4:
-        case 5:
-        default:
+        case 0:
+            show(file);
     }
-
 }
