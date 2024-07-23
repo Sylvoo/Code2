@@ -8,13 +8,5 @@ int nr;
 
 int main()
 {
-    fstream plik;
-    nr = menu();
-    switch(nr)
-    {
-        num_line ++;
-        cout<<num_line<<". "<<line;
-    }
-    inputFile.close();
-    return 0;
+    Add("content.txt");
 }
