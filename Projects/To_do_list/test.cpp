@@ -6,7 +6,12 @@
 using namespace std;
 int nr;
 
+void clear(string filename)
+{   
+    ofstream file(filename, ios::trunc);    
+}
+
 int main()
 {
-    Add("content.txt");
+    clear("content.txt");
 }

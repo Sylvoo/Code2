@@ -4,10 +4,9 @@
 #include<ios>
 
 using namespace std;
-int lines_counter(string);
-void del(string filename);
+
 int nr;
-string bin = "bin.txt";
+string goal = "copy.txt";
 int main()
 {
     //fstream plik;
@@ -22,18 +21,23 @@ int main()
         nr = menu();
         switch(nr)
         {
-            case 0:
+            case 1:
+                cout<<"\n[ --- ZAWARTOSC TO-DO LISTY --- ]\n";               
                 Show(content);
                 break;
-            case 1:
+            case 2:
                 Add(content);
                 break;
-            case 2:
-                del(content);
+            case 3:
+                del(content, goal);
+                break;
+            case 4:
+                clear(content);
+                cout<<"\n --- Wszystkie pozycje zostaly usuniete :) --- \n";
                 break;
             case 5:
-                cout<<"\n            ***     See you soon ! :D     ***     "<<endl;
-                cout<<"";
+                cout<<"\n            ***     See you soon ! :D     ***     ";
+                cout<<"\n ";
                 isOff = true;
                 break;
             default:
@@ -42,22 +46,3 @@ int main()
         }
     }
 }
-void del(string filename)
-    {   
-        int ktore;
-        string line;
-        ifstream file;
-        file.open(filename);
-        ofstream trash;
-        trash.open(bin);
-        cout<<"Ktore zadanie chcesz usunac z To-Do listy?: ";
-        cin>>ktore;
-        while(getline(file, line))
-            if(line_counter(filename)!=ktore)
-            {
-                trash<<line<<endl;
-            }
-        trash.close();
-        file.close();
-        
-    }
