@@ -1,0 +1,24 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build and run",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-g", // opcjonalne flagi debugowania
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}.exe",
+                "&&", // użyj "&&" aby wykonać kolejne polecenie tylko w przypadku sukcesu kompilacji
+                "${fileDirname}/${fileBasenameNoExtension}.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Zadanie do kompilowania i uruchamiania programu w C++"
+        }
+    ]
+}
