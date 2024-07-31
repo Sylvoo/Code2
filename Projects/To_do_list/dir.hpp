@@ -5,7 +5,10 @@ using namespace std;
 int num;
 int menu()
     {
-        cout<<"\n   ---------- TO DO LIST ---------- \n"
+        cout<<"\n   --------------------------------"
+            <<"\n   ---------- TO DO LIST ---------- \n"
+            <<"   ----------    MENU    ---------- \n"
+            <<"   --------------------------------\n"
             <<"\n1. Wyswietl zawartosc listy\n"
             <<"2. Dodaj do listy\n"
             <<"3. Usun z Listy\n"
@@ -53,13 +56,22 @@ int line_counter(string filename)
 
 void Add(string filename)
     {    
-        //int num_lines=1;
         string linia;
         ofstream file;
-        file.open(filename, ios_base::app);
+        file.open(filename, ios::app);
         string lineStr;
         ifstream inputfile(filename);
         cout<<"Tekst ktory chcesz dodac do listy : ";
+       /* while(true)
+        {
+            getline(cin, lineStr);
+            if(lineStr != " ")
+            {
+                break;
+            }
+            file << "\n"<<line_counter(filename)<<". "<< lineStr<<" ";
+        }
+        */
         cin>>linia;
         file<<"\n"<<line_counter(filename)<<". "<<linia;
         file.close();   

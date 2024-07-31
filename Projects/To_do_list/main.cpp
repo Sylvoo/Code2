@@ -11,6 +11,7 @@ int main()
 {
     //fstream plik;
     string content = "content.txt";
+    err(content);
     bool isOff = false;
     while(isOff == false)
     {   
@@ -24,6 +25,7 @@ int main()
             case 1:
                 cout<<"\n[ --- ZAWARTOSC TO-DO LISTY --- ]\n";               
                 Show(content);
+                
                 break;
             case 2:
                 Add(content);
@@ -42,6 +44,7 @@ int main()
                 break;
             default:
                 cout<<"         --------    Podano zly numer !!!    -------- \n";
+                isOff = true;
                 break;
         }
     }
