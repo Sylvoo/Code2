@@ -1,0 +1,15 @@
+C:\Coding\CSharp_learning\ToDoApp\bin\Debug\net8.0\ToDoApp.exe
+C:\Coding\CSharp_learning\ToDoApp\bin\Debug\net8.0\ToDoApp.deps.json
+C:\Coding\CSharp_learning\ToDoApp\bin\Debug\net8.0\ToDoApp.runtimeconfig.json
+C:\Coding\CSharp_learning\ToDoApp\bin\Debug\net8.0\ToDoApp.dll
+C:\Coding\CSharp_learning\ToDoApp\bin\Debug\net8.0\ToDoApp.pdb
+C:\Coding\CSharp_learning\ToDoApp\obj\Debug\net8.0\ToDoApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Coding\CSharp_learning\ToDoApp\obj\Debug\net8.0\ToDoApp.AssemblyInfoInputs.cache
+C:\Coding\CSharp_learning\ToDoApp\obj\Debug\net8.0\ToDoApp.AssemblyInfo.cs
+C:\Coding\CSharp_learning\ToDoApp\obj\Debug\net8.0\ToDoApp.csproj.CoreCompileInputs.cache
+C:\Coding\CSharp_learning\ToDoApp\obj\Debug\net8.0\ToDoApp.sourcelink.json
+C:\Coding\CSharp_learning\ToDoApp\obj\Debug\net8.0\ToDoApp.dll
+C:\Coding\CSharp_learning\ToDoApp\obj\Debug\net8.0\refint\ToDoApp.dll
+C:\Coding\CSharp_learning\ToDoApp\obj\Debug\net8.0\ToDoApp.pdb
+C:\Coding\CSharp_learning\ToDoApp\obj\Debug\net8.0\ToDoApp.genruntimeconfig.cache
+C:\Coding\CSharp_learning\ToDoApp\obj\Debug\net8.0\ref\ToDoApp.dll
