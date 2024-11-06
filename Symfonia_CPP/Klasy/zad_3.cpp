@@ -1,36 +1,12 @@
 #include <iostream>
 #include <cstring>
+#include "osoba.hpp"
 
 using namespace std;
 
-class osoba
-{
-    private:
-    char nazwisko[80];
-    int lata;
-
-    public:
-    void zapamietaj( const char* nazw, const int wiek);
-    void wypisz();
-};
-
-void osoba:: zapamietaj( const char* nazw, const int wiek)
-    {
-        //nazwisko = nazw;
-        //this -> wiek = wiek;
-        strcpy(nazwisko,(nazw ? nazw : "Anonim"));
-        lata = wiek;
-    }
-
-void osoba:: wypisz() 
-    {
-        cout<<nazwisko<<endl;
-        cout<<lata;
-    }
-
 int main()
 {
-  osoba profesor, student1, student2;
+    osoba profesor, student1, student2;
     
     profesor.zapamietaj("Zbychu Szklarski", 66);
     student1.zapamietaj("Mateusz Trzeciak",21);
@@ -45,4 +21,31 @@ int main()
 
     student1.wypisz();
 
+}
+
+void wakacje::zapis_na_wycieczke(const osoba*) 
+{
+    
+}
+
+wakacje grecja;
+void osoba::moje_wakacje()
+{   
+    grecja.zapis_na_wycieczke(this);
+}
+
+
+
+void osoba::zapamietaj( const char* nazw, const int lata)
+{
+    //nazwisko = nazw;
+    //this -> wiek = wiek;
+    strcpy(this -> nazwisko,(nazw ? nazw : "Anonim"));
+    this -> wiek = lata;
+}
+
+void osoba:: wypisz() 
+{
+    cout<<nazwisko<<endl;
+    cout<<wiek;
 }
