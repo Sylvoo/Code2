@@ -18,6 +18,7 @@ namespace Variables
             System.Console.WriteLine(tab);
             Array.Clear(tab);
             System.Console.WriteLine(tab);
+            
         }
     }
 }  
