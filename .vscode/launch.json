@@ -34,8 +34,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Coding/Symfonia_CPP",
-      "program": "c:/Coding/Symfonia_CPP/build/Debug/outDebug",
+      "cwd": "c:/Coding/cpp_learning/Symfonia_CPP",
+      "program": "c:/Coding/cpp_learning/Symfonia_CPP/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
