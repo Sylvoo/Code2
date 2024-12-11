@@ -23,7 +23,7 @@ class Prostokat
     float x,y,szerokosc,wysokosc;
 
     public:
-    Prostokat(string="brak",float=0, float=0, float=1, float=1);
+    Prostokat(string="brak", float=0, float=0, float=1, float=1);
     void wczytaj();
 
     friend void sedzia(Punkt pkt, Prostokat p);
